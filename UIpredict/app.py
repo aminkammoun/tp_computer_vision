@@ -2,9 +2,12 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 from prediction import predict
+from PIL import Image
+image = Image.open('./IMG20220502151614.jpg')
 
+st.image(image, caption='Amine')
 
-st.title('Classifying Iris Flowers')
+""" st.title('Classifying Iris Flowers')
 st.markdown('Toy model to play to classify iris flowers into \
      (setosa, versicolor, virginica) based on their sepal/petal \
     and length/width.')
@@ -34,5 +37,7 @@ st.text('')
 st.markdown(
     '`Create by` [santiviquez](https://twitter.com/santiviquez) | \
          `Code:` [GitHub](https://github.com/santiviquez/iris-streamlit)')
-
+ """
+st.text('')
+    
 ##/content/data_face.csv
